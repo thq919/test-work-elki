@@ -32,7 +32,7 @@ class _DescribeScreenState extends State<DescribeScreen> {
           if (state is DescribeItemInProgress && state.entity != null) {
             return BottomMenuDescribe(price: state.entity!.price.toInt());
           } else {
-            return BottomMenu();
+            return const BottomMenu();
           }
         }),
       ),
